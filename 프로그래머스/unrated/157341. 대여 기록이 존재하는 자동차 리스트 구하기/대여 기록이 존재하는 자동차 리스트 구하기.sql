@@ -1,0 +1,13 @@
+-- 코드를 입력하세요
+-- 자동차 종류가 '세단'
+-- 10월에 대여를 시작한 기록이 있는
+-- 자동차 ID 리스트
+-- 자동차 ID 리스트는 중복이 없어
+-- 자동차 ID를 기준으로 내림
+
+SELECT DISTINCT HIS.CAR_ID
+FROM CAR_RENTAL_COMPANY_RENTAL_HISTORY HIS JOIN CAR_RENTAL_COMPANY_CAR CAR
+ON HIS.CAR_ID = CAR.CAR_ID
+WHERE TO_CHAR(HIS.START_DATE, 'MM') = '10'
+AND CAR.CAR_TYPE = '세단'
+ORDER BY CAR_ID DESC
