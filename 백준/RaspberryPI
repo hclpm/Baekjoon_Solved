@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 import json
 import time
 
-KAKAO_TOKEN = "3lzsdAm4Pea2AERRVrCqkP6BhDBvavbGYG5n6PSfCinI2AAAAYq62lFJ"
+KAKAO_TOKEN = "????"
 
 def get_price(code):
     # html 파일을 가져올 url 입력
